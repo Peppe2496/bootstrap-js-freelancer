@@ -120,56 +120,60 @@
                 
                 </div>
               </div>
-              <form class="row g-3" id="formOfferta" onsubmit="checkForm(event)">
-                <div class="col-md-6">
-                  <label for="inputName4" class="form-label">First name</label>
-                  <input type="text" class="form-control" placeholder="Enter your first name...">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputName3" class="form-label">Last name</label>
-                  <input type="text" class="form-control" placeholder="Enter your last name...">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label"> Email address</label>
-                  <input type="email" class="form-control" placeholder="name@example.com">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputName5" class="form-label">Hours requested</label>
-                  <input type="text" class="form-control" id="hours" placeholder="Hours requested...">
-                </div>
-                <div class="col-md-6">
-                  <label for="worktype" class="form-label">Type of work</label>
-                  <select name="worktype" id="typeOfWork" class="form-select" required>
-                    <option value="" selected disabled>Select the type of work</option>
-                    <option value="backend" >Back-end Developer</option>
-                    <option value="frontend" >Front-end Developer</option>
-                    <option value="analysis" >Project Analyst</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label for="inputName6" class="form-label">Discount code</label>
-                  <input type="text" class="form-control" id="discount">
-                  <div id="feedbackExpiredDiscount" class="invalid-feedback">
-                    Il formato del codice non è corretto.
-                </div>
-                <div id="feedbackValidDiscount" class="valid-feedback">
-                </div>
-                </div>
-                <div class="col-mb-12">
-                  <label for="FormControlTextarea1" class="form-label">Message</label>
-                  <textarea class="form-control" id="FormControlTextarea1" rows="6" placeholder="Specify your work commission..."></textarea>
-                </div>
-                <div class="col d-md-flex justify-content-md-center mb-5 mt-4">
-                  <button type="submit" class="btn btn-warning" form="checkForm">Send</button>
-                </div>
-              </form>
+              <div class="container bg-info">
+                  <form class="row g-3" id="validForm" onsubmit="checkForm(event)">
+                    <div class="col-md-6">
+                      <label for="inputName4" class="form-label">First name</label>
+                      <input type="text" class="form-control" placeholder="Enter your first name...">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputName3" class="form-label">Last name</label>
+                      <input type="text" class="form-control" placeholder="Enter your last name...">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label"> Email address</label>
+                      <input type="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputName5" class="form-label">Hours requested</label>
+                      <input type="text" class="form-control" id="hours" placeholder="Hours requested...">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="worktype" class="form-label">Type of work</label>
+                      <select name="worktype" id="typeOfWork" class="form-select" required>
+                        <option value="" selected disabled>Select the type of work</option>
+                        <option value="backend" >Back-end Developer</option>
+                        <option value="frontend" >Front-end Developer</option>
+                        <option value="analysis" >Project Analyst</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputName6" class="form-label">Discount code</label>
+                      <input type="text" class="form-control" id="discount">
+                      <div id="feedbackExpiredDiscount" class="invalid-feedback">
+                        Il formato del codice non è corretto.
+                    </div>
+                    <div id="feedbackValidDiscount" class="valid-feedback">
+                    </div>
+                    </div>
+                    <div class="col-mb-12">
+                      <label for="FormControlTextarea1" class="form-label">Message</label>
+                      <textarea class="form-control" id="FormControlTextarea1" rows="6" placeholder="Specify your work commission..."></textarea>
+                    </div>
+                    <div class="col d-md-flex justify-content-md-center mb-5 mt-4">
+                      <button type="submit" class="btn btn-warning" form="validForm">Send</button>
+                    </div>
+                  </form>
+                  
 
-                <div class="row justify-content-center my-3 text-center">
-                  <div class="col-12 d-none">
-                      <span class="fs-4 m-0 bg-white p-2 rounded border border-light">Il prezzo finale
-                          è di: <span id="spanPrice" class="text-success"></span></span>
+                    <div class="row justify-content-center my-3 text-center">
+                      <div class="col-12 d-none">
+                          <span class="fs-4 m-0 bg-white p-2 rounded border border-light">Il prezzo finale
+                              è di: <span id="spanPrice" class="text-success"></span></span>
+                      </div>
                   </div>
               </div>
+
         </main>
 
           <footer>
